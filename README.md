@@ -17,4 +17,27 @@
     <td>Redirect the user to another page on submission</td>
     <td>The concept of redirection in HTTP is performed only via GET protocol. In Razor RedirectToPage could be used. In MVC (this project) RedirectToAction is used instead to perform the same process on submitting the form</td>
   </tr>
+  <tr>
+    <td>Display welcome message with users first name only</td>
+    <td>The first name needs to be extracted from the full name and therefore require further validation to ensure the input in the first step is actually a valid Full Name.</td>
+  </tr>
+  <tr>
+    <td>Display message showing how many vowels are in the name</td>
+    <td>The name above could refer to both full name and first name. Since on a Welcome message a first name is more approperite, the extracted first name is used.</td>
+  </tr>
+  <tr>
+    <td>Display message showing how many vowels are in the name</td>
+    <td>The name above could refer to both full name and first name. Since on a Welcome message a first name is more approperite, the extracted first name is used. It's also assumed that the vowels should be counted regardless of any repeatition</td>
+  </tr>
+  <tr>
+    <td>Display message showing how old the user is and how many days before next birthday.</td>
+    <td>Based on the DOB, the users' age is calculated, taken into account the leap years. Similarly number of days to their birthday is calculated.</td>
+  </tr>
+  <tr>
+    <td>Show table which displays 14 days before run up to next birthday (days of week (mon, tue, wed etc..) and allow the dates to be clickable, which redirect the user to the following “https://www.historynet.com/today-in-history/june-10” with selected date
+    </td>
+    <td>
+      A small two-row calendar will be shown in the result page. Showing day and month in each cell. The cells will appear in chronological order, showing the oldest time on the left top corner. Since, no post-processing is required on the click, each cell can directly link to the required page without creating further load on the server.
+    </td>
+  </tr>
 </table>
