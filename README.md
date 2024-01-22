@@ -54,7 +54,7 @@
 <h2>UserProcessor Service</h2> 
 <p>The UserProcessor service is responsible for creating the result model based on the unser input. This process could be done within the UserInfo model itself, however, having this separated as a sesrvice will have several benefits in code maintanance and extending the code as well avoiding server load when these computations are not necessary in the processes of user input</p>
 <h1>Tests</h1>
-<p>Unit tests have been developed to ensure the correct output for the Validation service.</p>
+<p>Unit Tests have been developed using MSTest to ensure the correct output for the Validation and UserProcessor services.</p>
 <p></p>
 <h1>Deployment</h1>
 <p>Visit https://dotnet.microsoft.com/en-us/download/dotnet/8.0 for required server set up per platform. For a full instruction visit https://learn.microsoft.com/en-us/aspnet/core/host-and-deploy/?view=aspnetcore-8.0</p>
