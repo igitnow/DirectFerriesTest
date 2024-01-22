@@ -1,0 +1,90 @@
+html {
+    font-size: 14px;
+}
+
+@media (min-width: 768px) {
+    html {
+        font-size: 16px;
+    }
+}
+
+.btn:focus, .btn:active:focus, .btn-link.nav-link:focus, .form-control:focus, .form-check-input:focus {
+    box-shadow: 0 0 0 0.1rem white, 0 0 0 0.25rem #258cfb;
+}
+
+.date-cell {
+    display: flex;
+    flex-direction: column;
+    border: 1px solid grey;
+    border-radius: 4px;
+}
+
+.weekday-header {
+    width:5rem;
+    text-align:center;
+}
+.calendar-table {
+    border-collapse: separate;
+    border-spacing: 0;
+}
+.separator{
+    height:1rem;
+}
+.birthday-cell {
+    height: 15rem;
+    border: 2px solid red;
+    flex-direction: column;
+    text-align: center;
+    font-size: x-large;
+    background: radial-gradient(red,transparent);
+    color: white;
+    border-radius: 5rem;
+    text-shadow: 3px 3px 10px white;
+    box-shadow:4px 4px 10px grey;
+}
+
+.weekday-day {
+    background-color: aliceblue;
+    border-top: 1px solid grey;
+    border-bottom: 1px solid grey;
+    font-weight: bold;
+}
+    .cell-link {
+        box-shadow:1px 1px 3px grey;
+        text-decoration: none;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        border: 1px solid grey;
+        border-radius: 7px;
+        text-align: center;
+        height: 5rem;
+    }
+    .cell-link:hover {
+        background-color:blue;
+        color:white;
+    }
+        .cell-link:hover .weekday-day{
+            color:black;
+            background-color:lavenderblush;
+        }
+.week-row {
+    display: flex;
+    flex-direction: row;
+}
+
+html {
+    position: relative;
+    min-height: 100%;
+}
+
+body {
+    margin-bottom: 60px;
+}
+
+
+@media only screen and (min-width: 600px) {
+    .form-control {
+        width: 30% !important;
+    }
+}

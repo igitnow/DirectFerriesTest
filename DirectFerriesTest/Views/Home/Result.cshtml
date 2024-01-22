@@ -1,0 +1,71 @@
+﻿@{
+    ViewData["Title"] = "Results";
+}
+@model DirectFerriesTest.Models.UserResults
+@inject ConfigSettings Config;
+
+<div>
+    <h1>Welcome <b>@Model.FirstName !</b></h1>
+    <p>There @(Model.VowelsCount > 1 ? "are " : "is ") <b>@Model.VowelsCount</b> vowel@(Model.VowelsCount > 1 ? "s" : "") in your name. You are <b>@Model.Age</b> years old and we have <b>@Model.DaysToBirthday</b> day@(Model.DaysToBirthday > 1 ? "s" : "") utill your next birthday.<p>
+        <table class="calendar-table">
+
+                @{
+                    DateTime dob = Model.DOB;
+
+                    int totalWeeks = Config.TotalWeeks;
+                    int iWeek = totalWeeks - 1;
+
+                    while (iWeek >= 0)
+                    {
+                        if (iWeek == totalWeeks - 1)
+                        {
+                        <tr>
+                                @for (int i = 7; i > 0; i--)
+                                {
+                                    DateTime nextDay = dob.AddDays(-i - (iWeek * 7));
+                                <th class="weekday-header">
+                                    <label>@nextDay.ToString("ddd")</label>
+                                </th>
+                                }
+                        </tr>
+                        }
+
+                    <tr>
+
+                            @for (int i = 7; i > 0; i--)
+                            {
+                                DateTime nextDay = dob.AddDays(-i - (iWeek * 7));
+                            <td>
+                                <a class="cell-link" href="https://www.historynet.com/today-in-history/@nextDay.ToString("MMMM")-@nextDay.ToString("dd")/" target=”_blank”>
+                                    <div class="weekday-day ">@nextDay.ToString("dd")</div>
+                                    <div>@nextDay.ToString("MMM")</div>
+                                </a>
+                            </td>
+                            }
+
+                    </tr>
+
+                        if (iWeek == 0)
+                        {
+                        <tr class="separator">
+                            <td colspan="7"></td>
+                        </tr>
+                        <tr>
+                            <td colspan="2"/>
+                            <td colspan="3" class="birthday-cell">
+                                <label>🥳🎂🎉</label>
+                                <label><b>@dob.ToString("ddd dd MMMM")</b></label>
+                                <label>Your Birthday!</label>
+                            </td>
+                            <td colspan="2"/>
+                        </tr>
+                        }
+
+                        iWeek--;
+
+                    }
+                }
+
+        </table>
+
+</div>
