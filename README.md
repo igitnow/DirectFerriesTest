@@ -25,7 +25,7 @@
   </tr>
   <tr>
     <td>Display message showing how many vowels are in the name</td>
-    <td>The "name" in the requirement could refer to both full name and first name. Since on a Welcome message a first name is more approperite, the extracted first name is used.</td>
+    <td>The "name" in the requirement could refer to both full name and first name. Since on the Welcome message, first name is used, we take this as first name.</td>
   </tr>
   <tr>
     <td>Display message showing how many vowels are in the name</td>
