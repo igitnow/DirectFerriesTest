@@ -43,7 +43,6 @@ namespace DirectFerriesTest.Controllers
             }
             else
             {
-                ViewBag.Errors = ModelState.Values.SelectMany(v => v.Errors).Select(a => a.ErrorMessage).ToArray();
                 return View("Index");
             }
             
@@ -53,8 +52,6 @@ namespace DirectFerriesTest.Controllers
         {
             return View(userResults);
         }
-
-     
 
         [ResponseCache(Duration = 0, Location = ResponseCacheLocation.None, NoStore = true)]
         public IActionResult Error()

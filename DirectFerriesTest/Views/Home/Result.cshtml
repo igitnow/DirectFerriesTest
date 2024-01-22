@@ -36,7 +36,7 @@
                             {
                                 DateTime nextDay = dob.AddDays(-i - (iWeek * 7));
                             <td>
-                                <a class="cell-link" href="https://www.historynet.com/today-in-history/@nextDay.ToString("MMMM")-@nextDay.ToString("dd")/" target=”_blank”>
+                                <a class="cell-link" href="@String.Format(Config.HistoryURLFormat, nextDay.ToString("MMMM-dd"))" target=”_blank”>
                                     <div class="weekday-day ">@nextDay.ToString("dd")</div>
                                     <div>@nextDay.ToString("MMM")</div>
                                 </a>
