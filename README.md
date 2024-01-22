@@ -50,5 +50,5 @@
 <p>MVC provides basic model validation based on the types and attributes. A Validation service was created to ensure the validity of the First Name and DOB when taken in the first page.</p>
 <h3>Frontent</h3>
 <p>RegExp was used to allow only alphabets and blank space in the Full Name field.</p>
-<h2>User Processor</h2>
+<h2>User Processor</h2> 
 <p>The user processor is responsible for creating the result model based on the unser input. This process could be done within the UserInfo model itself, however, having this separated as a sesrvice will have several benefits in code maintanance and extending the code as well avoiding server load when these computations are not necessary in the processes of user input</p>
