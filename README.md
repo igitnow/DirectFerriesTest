@@ -41,3 +41,11 @@
     </td>
   </tr>
 </table>
+
+<h1>Services</h1>
+<h2>Configuration</h2>
+<p>The app config will be read from appsettings.json where the number of weeks to be shown before the birthday can be adjusted. The config service does not depend on other inputs and would be more handy to be injected to the page in a Razor fashion.</p>
+<h2>Validation</h2>
+<p>MVC provides basic model validation based on the types and attributes. A Validation service was created to ensure the validity of the First Name and DOB when taken in the first page.</p>
+<h2>User Processor</h2>
+<p>The user processor is responsible for creating the result model based on the unser input. This process could be done within the UserInfo model itself, however, having this separated as a sesrvice will have several benefits in code maintanance and extending the code as well avoiding server load when these computations are not necessary in the processes of user input</p>
