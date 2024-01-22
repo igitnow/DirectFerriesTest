@@ -29,7 +29,7 @@ namespace DirectFerriesTest.Services
             if (string.IsNullOrEmpty(userInfo.FullName)) return 0;
             List<char> vowels = new List<char> { 'a', 'e', 'i', 'o', 'u' };
             string firstName = GetFirstName(userInfo);
-            return firstName.Count(c => vowels.Contains(c));
+            return firstName.ToLower().Count(c => vowels.Contains(c));
 
         }
 

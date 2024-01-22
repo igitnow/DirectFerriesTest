@@ -8,6 +8,9 @@ namespace DirectFerriesTest.Services
     {
         public (string, bool) ValidDOB(DateTime dob)
         {
+            if (dob.CompareTo( DateTime.Now)>0 )
+                return ("Date of birth cannot be in the future.", false);
+
             return ("", true);
         }
 
