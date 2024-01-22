@@ -2,7 +2,7 @@
 <p>
   This MVC .Net Core app is written as part of the application process for a role at Direct Ferries. 
 </p>
-<h1>Release Highlights</h1>
+<h1>Release</h1>
 <p>This is the first release as per requirement.</p>
 <h1>Requirement</h1>
 <p>Table below summarizes the requirements and elaborates each with interpretation as basis for development.</p>
@@ -17,7 +17,7 @@
   </tr>
   <tr>
     <td>Redirect the user to another page on submission</td>
-    <td>The concept of redirection in HTTP is performed only via GET protocol. In Razor RedirectToPage could be used. In MVC (this project) RedirectToAction is used instead to perform the same process on submitting the form</td>
+    <td>The concept of redirection in HTTP is performed only via GET method In Razor RedirectToPage could be used. In MVC (this project) RedirectToAction is used instead to perform the same process on submitting the form.</td>
   </tr>
   <tr>
     <td>Display welcome message with users first name only</td>
@@ -25,7 +25,7 @@
   </tr>
   <tr>
     <td>Display message showing how many vowels are in the name</td>
-    <td>The name above could refer to both full name and first name. Since on a Welcome message a first name is more approperite, the extracted first name is used.</td>
+    <td>The "name" in the requirement could refer to both full name and first name. Since on the Welcome message, first name is used, we take this as first name.</td>
   </tr>
   <tr>
     <td>Display message showing how many vowels are in the name</td>
@@ -53,7 +53,8 @@
 <p>RegExp was used to allow only alphabets and blank space in the Full Name field.</p>
 <h2>UserProcessor Service</h2> 
 <p>The UserProcessor service is responsible for creating the result model based on the unser input. This process could be done within the UserInfo model itself, however, having this separated as a sesrvice will have several benefits in code maintanance and extending the code as well avoiding server load when these computations are not necessary in the processes of user input</p>
-<h1>Test Plan</h1>
+<h1>Tests</h1>
+<p>Unit tests have been developed to ensure the correct output for the Validation service.</p>
 <p></p>
 <h1>Deployment</h1>
-<p>Visit https://dotnet.microsoft.com/en-us/download/dotnet/8.0 for required server set up per platform.</p>
+<p>Visit https://dotnet.microsoft.com/en-us/download/dotnet/8.0 for required server set up per platform. For a full instruction visit https://learn.microsoft.com/en-us/aspnet/core/host-and-deploy/?view=aspnetcore-8.0</p>
