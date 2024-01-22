@@ -41,12 +41,7 @@
     </td>
   </tr>
 </table>
-<h1>Platform</h1>
-<ul>
-  <li>.Net 8</li>
-  <li>MVC ASP.Net</li>
-</ul>
-  
+ 
 <h1>Services</h1>
 <h2>Configuration</h2>
 <p>The app config will be read from appsettings.json where the number of weeks to be shown before the birthday can be adjusted. The config service does not depend on other inputs and would be more handy to be injected to the page in a Razor fashion.</p>
