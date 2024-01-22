@@ -17,7 +17,7 @@
   </tr>
   <tr>
     <td>Redirect the user to another page on submission</td>
-    <td>The concept of redirection in HTTP is performed only via GET protocol. In Razor RedirectToPage could be used. In MVC (this project) RedirectToAction is used instead to perform the same process on submitting the form</td>
+    <td>The concept of redirection in HTTP is performed only via GET method In Razor RedirectToPage could be used. In MVC (this project) RedirectToAction is used instead to perform the same process on submitting the form.</td>
   </tr>
   <tr>
     <td>Display welcome message with users first name only</td>
