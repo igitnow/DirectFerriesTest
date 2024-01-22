@@ -57,4 +57,4 @@
 <p>Unit tests have been developed to ensure the correct output for the Validation service.</p>
 <p></p>
 <h1>Deployment</h1>
-<p>Visit https://dotnet.microsoft.com/en-us/download/dotnet/8.0 for required server set up per platform.</p>
+<p>Visit https://dotnet.microsoft.com/en-us/download/dotnet/8.0 for required server set up per platform. For a full instruction visit https://learn.microsoft.com/en-us/aspnet/core/host-and-deploy/?view=aspnetcore-8.0</p>
